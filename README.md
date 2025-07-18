@@ -158,3 +158,29 @@ learn-elympics-sdk/
 │   └── Elympics/ (SDK files)
 └── README.md
 ```
+
+## Troubleshooting
+
+- Matchmaking Issues: Check Game ID/Secret Key in ElympicsBehaviour
+
+- Sync Errors: Ensure PlayerData is assigned to ElympicsBehaviour
+
+- CLI Errors: Verify Node.js and Elympics CLI installation
+
+- Logs: Use Unity Console and Elympics Panel for debugging
+
+## Resources
+
+- Elympics Documentation https://docs.elympics.ai
+
+- Elympics GitHub https://github.com/Elympics
+
+- Elympics Panel https://console.elympics.ai
+
+## Contributing
+
+Feel free to fork this repository, submit issues, or create pull requests to improve the game!
+
+## License
+
+MIT License (see LICENSE file)
