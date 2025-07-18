@@ -22,7 +22,7 @@ A simple two-player Rock, Paper, Scissors multiplayer game built in Unity with t
 
 - Node.js: For Elympics CLI
 
-- Elympics Account: Sign up at Elympics Developer Console
+- Elympics Account: Sign up at Elympics Panel
 
 - Git: For repository management
 
@@ -77,3 +77,84 @@ cd learn-elympics-sdk
   ```
   elympics login
   ```
+
+### Scene Setup
+
+- Open Assets/Scenes/MainScene.unity
+
+- Ensure the scene has:
+
+  - A Canvas with three buttons (Rock, Paper, Scissors)
+
+  - Two TextMeshProUGUI elements for result and status display
+
+  - GameObjects for GameManager, PlayerData, and Elympics with attached scripts
+ 
+### Scripts
+
+- The project includes the following scripts in Assets/Scripts:
+
+  - GameManager.cs: Manages game logic, UI updates, and server-side winner determination
+
+  - PlayerData.cs: Stores and syncs player moves using Elympics variables
+
+  - ElympicsConfig.cs: Initializes Elympics client
+
+  - MatchmakingManager.cs: Handles matchmaking via Elympics Lobby
+
+  - Web3Integration.cs: Logs match results on-chain
+
+### Build and Deploy
+
+- Build the Game:
+
+  - In Unity, go to Elympics > Build Game
+
+  - Select “Client and Server” and build for WebGL platform
+
+- Deploy to Elympics Cloud:
+
+  - In the terminal, navigate to the project folder and run:
+    ```
+    elympics build-upload
+    ```
+  - Upload the build and assign it to your Game Version in the Elympics Panel
+ 
+- Test Locally:
+
+  - Use Elympics > Run Local Server to test with two Unity instances
+ 
+## Gameplay
+
+- Players join a match via Elympics matchmaking
+
+- Each player selects a move (Rock, Paper, or Scissors)
+
+- The server compares moves and determines the winner (Rock > Scissors, Paper > Rock, Scissors > Paper)
+
+- Results are displayed on-screen and optionally logged on-chain
+
+## Web3 Integration
+
+- Enable Web3 in the Elympics Panel
+
+- Use Web3Integration.cs to log match results to the blockchain
+
+- Configure rewards in the Elympics Panel (requires wallet setup)
+
+## Folder Structure
+
+```
+learn-elympics-sdk/
+├── Assets/
+│   ├── Scenes/
+│   │   └── MainScene.unity
+│   ├── Scripts/
+│   │   ├── GameManager.cs
+│   │   ├── PlayerData.cs
+│   │   ├── ElympicsConfig.cs
+│   │   ├── MatchmakingManager.cs
+│   │   └── Web3Integration.cs
+│   └── Elympics/ (SDK files)
+└── README.md
+```
