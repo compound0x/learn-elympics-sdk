@@ -10,18 +10,18 @@ A simple two-player Rock, Paper, Scissors multiplayer game built in Unity with t
 
 - UI: Simple Unity UI with buttons for Rock, Paper, Scissors and text displays for results.
 
-- Web3: Logs match results on-chain using Elympics' Web3 API (e.g., for $ELP token rewards).
+- Web3: Logs match results on-chain using Elympics API.
 
-- Scalable: Deployable to Elympics Cloud for cross-platform play (WebGL, PC, mobile).
+- Scalable: Deployable to Elympics Cloud for cross-platform play.
 
 ## Prerequisites
 
-- Unity: 2021.3 LTS or later (download via Unity Hub).
+- Unity: 2021.3 LTS or later
 
-- Elympics SDK: Install via Unity Package Manager (see below).
+- Elympics SDK: Install via Unity Package Manager
 
-- Node.js: For Elympics CLI (download from Node.js).
+- Node.js: For Elympics CLI
 
-- Elympics Account: Sign up at Elympics Panel for Game ID and Secret Key.
+- Elympics Account: Sign up at Elympics Developer Console.
 
 - Git: For repository management.
